@@ -1,0 +1,2 @@
+# testnet
+lesgoo garap node
