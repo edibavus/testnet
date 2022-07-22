@@ -11,7 +11,9 @@ Spec Minimum
 
 Wallet: https://wallet.shardnet.near.org/
 
-Explorer: https://explorer.shardnet.near.org/ 
+Explorer: https://explorer.shardnet.near.org/
+
+## Challange
 
 | Challenges | Description                             | Link                                                                              |
 | ---------- | ------------------------------------- | --------------------------------------------------------------------------------- |
