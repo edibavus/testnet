@@ -18,8 +18,14 @@ Explorer: https://explorer.shardnet.near.org/
 | Challenges | Description                             | Link                                                                              |
 | ---------- | ------------------------------------- | --------------------------------------------------------------------------------- |
 | 001        | Setup NEAR-CLI                        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/1.md) |
-| 002        | Setup Wallet dan Run Validator        | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/002.md) |
-| 003        | Mount Staking Pool                 | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/003.md) |
-| 004        | Monitoring Node Status        | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/004.md) |
+| 002        | Setup Wallet dan Run Validator        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/2.md) |
+| 003        | Mount Staking Pool                 | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/3.md) |
+| 004        | Monitoring Node Status        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/4.md) |
 | 005        | Tutorial Stakewars            | -                                                                                 |
-| 006        | Ping Automatic  | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/006.md) |
+| 006        | Ping Automatic  | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/6.md) |
+
+
+
+Source Link
+[Stakewars](https://github.com/near/stakewars-iii "Stakewars")
+[yanto](https://github.com/yantodotid/testnet/blob/main/stakewars "yanto")
