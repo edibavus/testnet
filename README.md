@@ -1,2 +1,3 @@
 # testnet
-lesgoo garap node
+
+_**lesgoo garap node jangan males kawan**_
