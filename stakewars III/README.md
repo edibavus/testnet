@@ -1,8 +1,10 @@
 # TUTORIAL STAKEWARS III
 
 ## Useful links
-Wallet: https://wallet.shardnet.near.org
-Explorer: https://explorer.shardnet.near.org
+
+Wallet: https://wallet.shardnet.near.org/
+
+Explorer: https://explorer.shardnet.near.org/ 
 
 ## Challenge 001
 **Setup NEAR-CLI**
