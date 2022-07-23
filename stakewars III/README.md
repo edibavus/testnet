@@ -1,5 +1,9 @@
 # TUTORIAL STAKEWARS III
 
+<p align="center">
+<img src="https://github.com/edibavus/testnet/blob/main/stakewars%20III/image/banner.jpg?raw=true"  width="600px"/>
+<p>
+
 Spec Minimum
 | Hardware       | Chunk-Only Producer  Specifications                                   |
 | -------------- | ---------------------------------------------------------------       |
