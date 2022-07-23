@@ -31,6 +31,6 @@ Explorer: https://explorer.shardnet.near.org/
 
 
 Form
-Form Chunk-Only Producer Onboarding : https://github.com/near/stakewars-iii](https://nearprotocol1001.typeform.com/to/Z39N7cU9
+Form Chunk-Only Producer Onboarding : https://nearprotocol1001.typeform.com/to/Z39N7cU9
 
 Form for Submission Challenges 5-7	: [link](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform "Form for Submission Challenges 5-7")
