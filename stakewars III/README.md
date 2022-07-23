@@ -23,10 +23,10 @@ Explorer: https://explorer.shardnet.near.org/
 | ---------- | ------------------------------------- | --------------------------------------------------------------------------------- |
 | 001        | Setup NEAR-CLI                        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/1.md) |
 | 002        | Setup Wallet dan Run Validator        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/2.md) |
-| 003        | Mount Staking Pool                 | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/3.md) |
-| 004        | Monitoring Node Status        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/4.md) |
+| 003        | Deploy a new staking pool for your validator                 | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/3.md) |
+| 004        | Setup Tools for Monitoring Node Status        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/4.md) |
 | 005        | Make Article            | [Tutorial](https://github.com/near/stakewars-iii/blob/main/challenges/005.md "Tutorial") |
-| 006        | Ping Automatic  | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/6.md) |
+| 006        | Cron Task For Ping  | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/6.md) |
 
 
 
