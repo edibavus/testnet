@@ -25,7 +25,7 @@ Explorer: https://explorer.shardnet.near.org/
 | 002        | Setup Wallet dan Run Validator        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/2.md) |
 | 003        | Mount Staking Pool                 | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/3.md) |
 | 004        | Monitoring Node Status        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/4.md) |
-| 005        | Tutorial Stakewars            | -                                                                                 |
+| 005        | Make Article            | [Tutorial]([https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/4.md](https://github.com/near/stakewars-iii/blob/main/challenges/005.md)) |
 | 006        | Ping Automatic  | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/6.md) |
 
 
