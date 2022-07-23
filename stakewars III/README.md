@@ -26,6 +26,6 @@ Explorer: https://explorer.shardnet.near.org/
 
 
 
-Source Link
-[Stakewars](https://github.com/near/stakewars-iii "Stakewars")
-[yanto](https://github.com/yantodotid/testnet/blob/main/stakewars "yanto")
+Form
+[Form Chunk-Only Producer Onboarding Form](https://github.com/near/stakewars-iii](https://nearprotocol1001.typeform.com/to/Z39N7cU9)
+[Form for Submission Challenges 5-7](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform)
