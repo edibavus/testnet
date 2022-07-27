@@ -21,15 +21,17 @@ Spec Minimum
  ![Screenshot_54](https://cybernauts.web.id/wp-content/uploads/2022/01/image-4.png)
  
 - Isikan nama yang diinginkan 
-![Screenshot_54](https://cybernauts.web.id/wp-content/uploads/2022/01/image-7.png)
- - Keterangan :
+![Screenshot_54](https://cybernauts.web.id/wp-content/uploads/2022/01/image-7.png) 
+Keterangan :
+`
 Subscription : Jenis paket langganan yang akan digunakan.
-Resource Group : Sumberdaya yang akan digunakan. Apa itu Resource Manager?
+Resource Group : Sumberdaya yang akan digunakan.
 Virtual machine name: Nama VM
 Region : Lokasi Data Center
 Image: OS(Operating Systems)
 Size : Ukuran CPU dan RAM/Memory dan juga biaya sewa perbulan yang harus dibayar.
-Untuk konfigurasi lainnya, biarkan default.
+Untuk konfigurasi lainnya, biarkan default.`
+
 
 - Klik `create`
 ![Screenshot_54](https://cybernauts.web.id/wp-content/uploads/2022/01/image-8-1024x595.png)
