@@ -74,14 +74,19 @@ Explorer: https://explorer.shardnet.near.org/
 
 ## Challange
 
-| Challenges | Description                             | Link                                                                              |
-| ---------- | ------------------------------------- | --------------------------------------------------------------------------------- |
-| 001        | Setup NEAR-CLI                        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/1.md) |
-| 002        | Setup Wallet dan Run Validator        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/2.md) |
-| 003        | Deploy a new staking pool for your validator                 | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/3.md) |
-| 004        | Setup Tools for Monitoring Node Status        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/4.md) |
-| 005        | Make Article            | [Tutorial](https://github.com/near/stakewars-iii/blob/main/challenges/005.md "Tutorial") |
-| 006        | Cron Task For Ping  | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/6.md) |
+| Challenges | Description                             | Link                                                                              | Max points       | Type     | Network |
+| ---------- | ------------------------------------- | --------------------------------------------------------------------------------- | ---------------- | -------- | -------------- |
+| 001        | Setup NEAR-CLI                        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/1.md) | \-               | Core     | Shardnet       |
+| 002        | Setup Wallet dan Run Validator        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/2.md) | 30 UNP           | Core     | Shardnet       |
+| 003        | Deploy a new staking pool for your validator                 | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/3.md) | 10 UNP           | Core     | Shardnet       |
+| 004        | Setup Tools for Monitoring Node Status        | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/4.md) | 15 UNP           | Core     | Shardnet       |
+| 005        | Make Article            | [Tutorial](https://github.com/near/stakewars-iii/blob/main/challenges/005.md "Tutorial") | 10 DNP           | Optional | Shardnet       |
+| 006        | Cron Task For Ping  | [Tutorial](https://github.com/edibavus/testnet/blob/main/stakewars%20III/challange/6.md) | 5 UNP            | Core     | Shardnet       |
+
+* Delegated NEAR Points (DNP): at the end of the Stake Wars program, each Delegated NEAR Point (DNP) will be translated into 500 NEAR tokens delegated to your mainnet account for 1 year.
+* Unlocked NEAR Points (UNP): at the end of the Stake Wars program, each Unlocked NEAR Point (UNP) will be translated into 1 unlocked NEAR token, granted to your mainnet account.
+
+
 
 
 
