@@ -48,10 +48,14 @@ Run
 nano /etc/ssh/sshd_config
 
 ```
-Maka akan menampilkan
-![Screenshot_54](https://1.bp.blogspot.com/-pv4fTx0b9rQ/XzdmV9i_VPI/AAAAAAAAE7k/1LAAjZUkLEs8I4QKob3XHm67AbJgOdrlwCLcBGAsYHQ/w640-h551/permit%2Broot%2Blogin.png)
+Output
  
+ 
+![Screenshot_54](https://1.bp.blogspot.com/-pv4fTx0b9rQ/XzdmV9i_VPI/AAAAAAAAE7k/1LAAjZUkLEs8I4QKob3XHm67AbJgOdrlwCLcBGAsYHQ/w640-h551/permit%2Broot%2Blogin.png)
+
 Lalu Ubah menjadi
+
+
 ![Screenshot_54](https://1.bp.blogspot.com/-es-U1WWiY38/XzdmcNKgD3I/AAAAAAAAE7o/5_msRds5uf0Mg9c59zO37pDu7tY5a4BRACLcBGAsYHQ/w640-h551/permit%2Broot%2Blogin%2Byes.png)
 
 **Keterangan :**
