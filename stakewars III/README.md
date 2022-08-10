@@ -65,6 +65,10 @@ Ubah `#PermitRootLogin prohibit-password` menjadi `PermitRootLogin yes`
 Ubah `#PubkeyAuthentication yes` menjadi `PubkeyAuthentication no`
 Untuk baris `PasswordAuthentication yes` biasanya sudah benar. Tetapi bila ditampilkan lain, misalnya `PasswordAuthentication no`, ubah menjadi `PasswordAuthentication yes`
 
+**Lalu Run**
+```bash
+systemctl restart ssh
+```
 
 ## Useful links
 
