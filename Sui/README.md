@@ -104,10 +104,11 @@ RestartSec=3
 LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
-EOF```
+EOF
+```
 
 
-**Enable and Start our Service- this will start our node**
+**Enable and Start our Service, this will start our node**
 ```bash
 sudo systemctl enable sui-node
 sudo systemctl daemon-reload
