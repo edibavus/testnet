@@ -106,7 +106,7 @@ curl -fLJO https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blo
 Make copy
 ```bash
 cp $HOME/sui/crates/sui-config/data/fullnode-template.yaml \
-$HOME/.sui/fullnode.yaml
+$HOME/sui-node/fullnode.yaml
 ```
 `edit fullnode.yaml`
 
