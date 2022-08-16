@@ -69,13 +69,44 @@ git remote add upstream https://github.com/MystenLabs/sui
 ```bash
 git fetch upstream
 ```
-**Check out the devnet branch**
+**Switch `DEVNET` version
 ```bash
-git checkout --track upstream/devnet
+git checkout 8a29394515eaf520cc6fa54bca8ce0c22db0dbc8
 ```
-**Make copy of the** 
+**Build Binary**
 ```bash
-cp crates/sui-config/data/fullnode-template.yaml fullnode.yaml
+cargo run --release --bin sui-node -- --config-path fullnode.yaml
+```
+
+**If an error occurs**
+error: failed to get `config` as a dependency of package `sui-config v0.0.0 (/root/suirates/sui-config)`
+
+
+Download Binary
+```bash
+version=`wget -qO- https://api.github.com/repos/SecorD0/Sui/releases/latest | jq -r ".tag_name"`; \
+wget -qO- "https://github.com/SecorD0/Sui/releases/download/${version}/sui-linux-amd64-${version}.tar.gz" | tar -C /usr/bin/ -xzf -
+```
+
+Move binary files to the folder with binary files
+```bash
+mv $HOME/sui/target/release/{sui,sui-node,sui-faucet} /usr/bin/
+```
+
+Return to the home directory
+```bash
+cd
+```
+
+Download genesis
+```bash
+curl -fLJO https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob
+```
+
+Make copy
+```bash
+cp $HOME/sui/crates/sui-config/data/fullnode-template.yaml \
+$HOME/.sui/fullnode.yaml
 ```
 `edit fullnode.yaml`
 
@@ -84,10 +115,6 @@ sudo nano fullnode.yaml
 ```
 Edit metrics-address and json-rpc-address in the fullnode.yaml `127.0.0.1` to `0.0.0.0` 
 
-**Download genesis**
-```bash
-curl -fLJO https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob
-```
 ## Create a System service to Run Sui
 **Create Service**
 ```bash
@@ -122,12 +149,6 @@ sudo systemctl status sui-node
 **Check Logs**
 ```bash
 journalctl -u sui-node.service -f
-```
-**If ERROR Run dan tunggu karena lumayan agak lama** Lalu cek logs
-```bash
-git pull
-git checkout 8a29394515eaf520cc6fa54bca8ce0c22db0dbc8
-cargo run --release --bin sui-node -- --config-path fullnode.yaml
 ```
 
 
