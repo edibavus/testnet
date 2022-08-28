@@ -1,0 +1,120 @@
+```bash
+Aug 28 10:22:48 lesgo neard[966]: 2022-08-28T10:22:48.694939Z  INFO db: All RocksDB instances shut down
+Aug 28 10:22:48 lesgo neard[966]: 2022-08-28T10:22:48.694931Z  INFO db: Dropped a RocksDB instance. num_instances=0
+Aug 28 10:22:49 lesgo systemd[1]: neard.service: Succeeded.
+Aug 28 10:22:49 lesgo systemd[1]: Stopped NEARd Daemon Service.
+^C
+root@lesgo:~# cat ~/.near/node_key.json | grep public_key
+  "public_key": "ed25519:7VoMRSp94sWPeBJdXZncsnB5iF6SiHxWH24qWV7jtoAG",
+root@lesgo:~# rm ~/.near/node_key.json ~/.near/validator_key.json
+root@lesgo:~# cp node_key.json validator_key.json ~/.near
+root@lesgo:~# cat ~/.near/node_key.json | grep public_key
+  "public_key": "ed25519:7VoMRSp94sWPeBJdXZncsnB5iF6SiHxWH24qWV7jtoAG",
+root@lesgo:~# sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
+-- Logs begin at Mon 2022-08-15 11:50:46 UTC. --
+Aug 28 10:22:33 lesgo neard[966]: 2721941 38ryKBLLxBina4cLgA3vatVJM38U63mQpjo5Rhe13ner Processed in progress for 442ms  missing chunks for 415ms Chunks:(✔✔XX))
+Aug 28 10:22:33 lesgo neard[966]: 2721940 6WqHzNTRQ696fbwAbKJ5gLa3uY51uhTLcDSyQUuFc6qM Processed in progress for 229ms  missing chunks for 204ms Chunks:(✔✔X✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721939 B4xc3cPiS7fgSMPJM33gsy3HXzcStw1TeLXEUNTuoMCr Processed in progress for 338ms  missing chunks for 308ms Chunks:(✔✔XX))
+Aug 28 10:22:33 lesgo neard[966]: 2721938 34iHhPyNao5wMeXbTmXLVd5Aj6DyyroSz6bRQ8q2kNBW Processed in progress for 342ms  missing chunks for 313ms Chunks:(✔X✔X))
+Aug 28 10:22:33 lesgo neard[966]: 2721937 CQF6JPaJVd5AiX1yhMEDqfedJFeiv1fq2EXiCBQ1g1VB Processed in progress for 303ms  missing chunks for 278ms Chunks:(✔✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721936 GADCVsWsMiF5FFTpcmchX5yANWE9dsSeXv3wfj65zFZd Processed in progress for 368ms  missing chunks for 340ms Chunks:(✔✔✔X))
+Aug 28 10:22:33 lesgo neard[966]: 2721935 EAjrCoPioGH95yHoKD54wW1mYMzexDnDTJTyvFD9h4HJ Processed in progress for 368ms  missing chunks for 337ms Chunks:(✔X✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721934 HWk5zQpB6GtRWD4NtRKJ2jaM7EdJNucVDpt1yridkC81 Processed in progress for 381ms  missing chunks for 221ms Chunks:(X✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721933 5fJgEfdVBp4f6uShQ8dLs4tmsB431DYtsmWZN4smLTiw Processed in progress for 358ms  missing chunks for 261ms Chunks:(✔✔XX))
+Aug 28 10:22:33 lesgo neard[966]: 2721932 69D6AT28NGUxc2ngRTJg7VdRKAx9ehoKT9kftBkwdzVw Processed in progress for 426ms  missing chunks for 306ms Chunks:(✔✔X✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721931 Y6iWeMcqQ4fiSHpmZpcoNJ4aeGGzDjHLYrSAv9anupe Processed in progress for 274ms  missing chunks for 249ms Chunks:(X✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721930 C8KWtqmd5cCYGvyrBze83rv6GFxBmu8yYFyykNZLwtCz Processed in progress for 379ms  missing chunks for 278ms Chunks:(✔✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721929 7XED2YJp2LAqwfGqPA2KZTQjvVoMdfZX4v5Zw5EL99Gi Processed in progress for 354ms  missing chunks for 329ms Chunks:(✔✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721928 Dbncwj3TMPRXcjyz6sHd1xALy3qc13LJTotktxneTfio Processed in progress for 290ms  missing chunks for 263ms Chunks:(✔✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721927 EZX7f23fkYmCkap3ifdnCHLwdykc1HNZ2dADf3GMW4vw Processed in progress for 497ms  missing chunks for 471ms Chunks:(✔✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721926 HVvcR1tjRUMGZWDrD453SG56K5MqJTV9iWtCCwcJ1NuQ Processed in progress for 397ms  missing chunks for 372ms Chunks:(✔✔✔X))
+Aug 28 10:22:33 lesgo neard[966]: 2721925 HsdqN6zogCmMkcQWwAD6MUcJfF2jDw5q92tRYcJTYJNH Processed in progress for 303ms  missing chunks for 267ms Chunks:(✔✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721924 611skdLexWPo5gVB5GQWGTKRnH4k5JbSxzDaLVUHratf Processed in progress for 302ms  missing chunks for 273ms Chunks:(✔✔✔X))
+Aug 28 10:22:33 lesgo neard[966]: 2721923 GBnMFo1KbchmFrbtSMHzhdPz9VvtmoD5h6hF8d84U2ds Processed in progress for 295ms  missing chunks for 270ms Chunks:(X✔✔X))
+Aug 28 10:22:33 lesgo neard[966]: 2721922 7g7jCTAdXnRL1XyTprhEAfSEs6VX74L1cdAWUPYG96C1 Processed in progress for 321ms  missing chunks for 292ms Chunks:(✔✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721921 HmUMaLG3SrefDR64D3QV4mSaUt8EAfRnTf5ioLWpTi2V Processed in progress for 284ms  missing chunks for 254ms Chunks:(✔✔✔X))
+Aug 28 10:22:33 lesgo neard[966]: 2721920 G9DYaN9z1sgmfpepQbnGceFtmuMayuHhs2i2jj82riSi Processed in progress for 297ms  missing chunks for 267ms Chunks:(✔✔XX))
+Aug 28 10:22:33 lesgo neard[966]: 2721919 6LARsuhrDZjwZgyQZMsWDvc1Lvbnq53HFwQ1eTrbtuoy Processed in progress for 454ms  missing chunks for 428ms Chunks:(✔X✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721918 GYTa4UyQXFzhrket6jSPK7Sd7aS2x3FGaYwKKHaL72ms Processed in progress for 316ms  missing chunks for 290ms Chunks:(X✔✔✔))
+Aug 28 10:22:33 lesgo neard[966]: 2721917 3ySq3h7fHiAqXBh96BWcirNhvRgYgSFTnTG4LZnk3h7t Processed in progress for 351ms  missing chunks for 329ms Chunks:(✔✔✔X))
+Aug 28 10:22:37 lesgo neard[966]: 2022-08-28T10:22:37.105653Z  WARN sync: sync_hash `F5JdLpx1UysUaypdY1kEuqyxnBEN34XztvL66sgDPf6v` didn't pass validation, possible malicious behavior
+Aug 28 10:22:37 lesgo neard[966]: 2022-08-28T10:22:37.113127Z  WARN sync: sync_hash `F5JdLpx1UysUaypdY1kEuqyxnBEN34XztvL66sgDPf6v` didn't pass validation, possible malicious behavior
+Aug 28 10:22:37 lesgo neard[966]: 2022-08-28T10:22:37.113142Z  WARN sync: sync_hash `F5JdLpx1UysUaypdY1kEuqyxnBEN34XztvL66sgDPf6v` didn't pass validation, possible malicious behavior
+Aug 28 10:22:37 lesgo neard[966]: 2022-08-28T10:22:37.113149Z  WARN sync: sync_hash `F5JdLpx1UysUaypdY1kEuqyxnBEN34XztvL66sgDPf6v` didn't pass validation, possible malicious behavior
+Aug 28 10:22:37 lesgo neard[966]: 2022-08-28T10:22:37.113161Z  WARN sync: sync_hash `F5JdLpx1UysUaypdY1kEuqyxnBEN34XztvL66sgDPf6v` didn't pass validation, possible malicious behavior
+Aug 28 10:22:37 lesgo neard[966]: 2022-08-28T10:22:37.113162Z  WARN sync: sync_hash `F5JdLpx1UysUaypdY1kEuqyxnBEN34XztvL66sgDPf6v` didn't pass validation, possible malicious behavior
+Aug 28 10:22:37 lesgo neard[966]: 2022-08-28T10:22:37.175558Z  WARN sync: sync_hash `F5JdLpx1UysUaypdY1kEuqyxnBEN34XztvL66sgDPf6v` didn't pass validation, possible malicious behavior
+Aug 28 10:22:41 lesgo neard[966]: 2022-08-28T10:22:41.146733Z  WARN sync: sync_hash `HtZ9R9mdJifAy6f6QAfMsVD1iToYF68435yG2ipRLxSJ` didn't pass validation, possible malicious behavior
+Aug 28 10:22:41 lesgo neard[966]: 2022-08-28T10:22:41.146747Z  WARN sync: sync_hash `HtZ9R9mdJifAy6f6QAfMsVD1iToYF68435yG2ipRLxSJ` didn't pass validation, possible malicious behavior
+Aug 28 10:22:41 lesgo neard[966]: 2022-08-28T10:22:41.146781Z  WARN sync: sync_hash `HtZ9R9mdJifAy6f6QAfMsVD1iToYF68435yG2ipRLxSJ` didn't pass validation, possible malicious behavior
+Aug 28 10:22:41 lesgo neard[966]: 2022-08-28T10:22:41.162811Z  WARN sync: sync_hash `HtZ9R9mdJifAy6f6QAfMsVD1iToYF68435yG2ipRLxSJ` didn't pass validation, possible malicious behavior
+Aug 28 10:22:41 lesgo neard[966]: 2022-08-28T10:22:41.162814Z  WARN sync: sync_hash `HtZ9R9mdJifAy6f6QAfMsVD1iToYF68435yG2ipRLxSJ` didn't pass validation, possible malicious behavior
+Aug 28 10:22:41 lesgo neard[966]: 2022-08-28T10:22:41.162843Z  WARN sync: sync_hash `HtZ9R9mdJifAy6f6QAfMsVD1iToYF68435yG2ipRLxSJ` didn't pass validation, possible malicious behavior
+Aug 28 10:22:41 lesgo neard[966]: 2022-08-28T10:22:41.162848Z  WARN sync: sync_hash `HtZ9R9mdJifAy6f6QAfMsVD1iToYF68435yG2ipRLxSJ` didn't pass validation, possible malicious behavior
+Aug 28 10:22:41 lesgo neard[966]: 2022-08-28T10:22:41.162854Z  WARN sync: sync_hash `HtZ9R9mdJifAy6f6QAfMsVD1iToYF68435yG2ipRLxSJ` didn't pass validation, possible malicious behavior
+Aug 28 10:22:43 lesgo systemd[1]: Stopping NEARd Daemon Service...
+Aug 28 10:22:43 lesgo neard[966]: 2022-08-28T10:22:43.311737Z  WARN neard: SIGINT, stopping... this may take a few minutes.
+Aug 28 10:22:43 lesgo neard[966]: 2022-08-28T10:22:43.997046Z  INFO stats: # 2721975 BMF34fKJ9G7mDpzuzJPyiactgstvnbmeWi3HcTVjArVZ 100 validators 30 peers ⬇ 1.66 MB/s ⬆ 799 kB/s 0.80 bps 63.2 Tgas/s CPU: 152%, Mem: 5.43 GB
+Aug 28 10:22:43 lesgo neard[966]: 2022-08-28T10:22:43.999390Z DEBUG stats: EpochId(`DjvCzNGgqhpG6b4rX66xmJqUnkHqG1Jq4uzWV2yz86Y`) Orphans: 0 With missing chunks: 0 In processing 0
+Aug 28 10:22:43 lesgo neard[966]: 2721975 BMF34fKJ9G7mDpzuzJPyiactgstvnbmeWi3HcTVjArVZ Processed in progress for 302ms  missing chunks for 267ms Chunks:(✔✔X✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721974 53wuTHEYX6QJJg7RAaqANhTP1Qfpn3uJDbLQczVGxz1p Processed in progress for 323ms  missing chunks for 294ms Chunks:(✔✔✔✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721973 7F1T1U3jgucvMB2J9vKYUUAFHLZMk87HpM8BffqFAnF9 Processed in progress for 537ms  missing chunks for 454ms Chunks:(✔✔X✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721972 13jgbAXPXSwXFb7Nvc6wBZ8rdzF2rgVJbYPN9HzTJWUN Processed in progress for 339ms  missing chunks for 249ms Chunks:(✔✔X✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721971 GnuCQzi26vJW2jWXyGbN1oB8fuVjCXjnoP6ic64BGZbs Processed in progress for 494ms  missing chunks for 344ms Chunks:(✔X✔✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721970 2Nfj2EFFg6c6VJgpQcpHBv4p7Z3HvQRvJcFvPoNx3pxg Processed in progress for 414ms  missing chunks for 283ms Chunks:(✔✔XX))
+Aug 28 10:22:43 lesgo neard[966]: 2721969 9bTvxHnLwHThas29YD95HeLhNVC7B6AS6AVymq4RpahC Processed in progress for 403ms  missing chunks for 364ms Chunks:(✔X✔X))
+Aug 28 10:22:43 lesgo neard[966]: 2721968 HFPWWSGmsZBVAyzjxw8Sh3GNepnekwxwxV58tXUjWLTe Processed in progress for 440ms  missing chunks for 408ms Chunks:(✔✔XX))
+Aug 28 10:22:43 lesgo neard[966]: 2721967 EbqCuFs7Sm8pBW8eBqxNpBkMLZmvm9S6c4NBqpzYDoHh Processed in progress for 332ms  missing chunks for 300ms Chunks:(X✔✔✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721966 AsBFco3bk9K65pYaiUXR84TUJzM9pvkMtsMPk59LocVV Processed in progress for 348ms  missing chunks for 271ms Chunks:(✔✔✔✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721965 Er8ZEHmK8mPG15zXPQhg1ZVN4omSvLdju7n2s3oHCJVJ Processed in progress for 322ms  missing chunks for 292ms Chunks:(✔✔✔✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721962 Cz7JeM9RiU3x5RpF2afvJc6bporzY7c1svZ3RyZHqGJ4 Processed in progress for 3131ms  missing chunks for 3098ms Chunks:(✔✔✔✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721961 2kjv3JwLSmZMdC5vMtjap8VxVKHbPSSzkkfqYuzwpLFg Processed in progress for 276ms  missing chunks for 245ms Chunks:(✔✔✔✔))
+Aug 28 10:22:43 lesgo neard[966]: 2721960 AqGABFRHLR3e2gvjSM7wCWxA89qZfA8cNXgBr3obB3EF Processed in progress for 320ms  missing chunks for 291ms Chunks:(X✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721959 CKByNvZ95j9XoF1ehKni8qWD5hVxxAinXzbcVFCXzKg7 Processed in progress for 282ms  missing chunks for 242ms Chunks:(✔✔XX))
+Aug 28 10:22:44 lesgo neard[966]: 2721957 4KdDfSB2p6xM6456bPXSVR4M7NnvnCMwoEkLzK42Fe9M Processed in progress for 1796ms orphan for 1438ms missing chunks for 336ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721956 FpY3WjVw6AZSvKNX3BvoUpbVDBfA14mxhC6UgXhQP2WX Processed in progress for 1839ms orphan for 1551ms missing chunks for 261ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721955 4H6i2BQjjkkmLVYQaSQW7SYpenpuzgrwvixYxCrhMhYF Processed in progress for 1582ms orphan for 1167ms missing chunks for 386ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721954 7HBbngaiiuZBdTRX6AS4LsLqkgDQugMYKka17ii11bFU Processed in progress for 1174ms orphan for 683ms missing chunks for 457ms Chunks:(✔✔✔X))
+Aug 28 10:22:44 lesgo neard[966]: 2721953 BHb1GLHSfgbTiQ9tjge1fedi25QPFUd1KBGzRh9wFZZN Processed in progress for 704ms  missing chunks for 664ms Chunks:(X✔✔X))
+Aug 28 10:22:44 lesgo neard[966]: 2721952 2kxzxzFiPnoL81zNDRp2JdHXqsaRH7zsQoqw92fCckiu Processed in progress for 1650ms  missing chunks for 302ms Chunks:(X✔✔X))
+Aug 28 10:22:44 lesgo neard[966]: 2721951 H8yW6nGKdSP8Fv8JA2MtqWkMn62w9KrCW1TP9jJLLVPi Processed in progress for 419ms  missing chunks for 389ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721950 FNcFDzXYkd7VfaVSKjhVv3EyayYazRPfRyMLLYssVmyt Processed in progress for 327ms  missing chunks for 302ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721949 2b33mS8PgFdvwLHYef9tH1LADd6QwPZ9pFkaMMPkcwuJ Processed in progress for 397ms  missing chunks for 367ms Chunks:(✔XX✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721948 2tEUaTeM3eDkuu5vK1FC3XaiiSrmGQNUynh31wCbfyog Processed in progress for 347ms  missing chunks for 323ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721947 FeGwAxb4mXcVjGWE1bozdzSQjKVLZMLVbb4epinmcPRr Processed in progress for 410ms  missing chunks for 375ms Chunks:(✔X✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721946 6ovUzDG61KmgCLrPYMBzwgg9DjSBejrdq1J7bZEDwxK9 Processed in progress for 389ms  missing chunks for 356ms Chunks:(XXX✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721945 7Bn749C4nFYybR4UdCv8c9Fzp7riJZmJYgSU71QJHBHo Processed in progress for 426ms  missing chunks for 395ms Chunks:(✔✔✔X))
+Aug 28 10:22:44 lesgo neard[966]: 2721944 AozYT8kCwugnhBbR9qczaPADcBVQ5PHBZYXuUu3Wb1zh Processed in progress for 326ms  missing chunks for 283ms Chunks:(✔X✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721943 J2AGzcyZMTq7EHw1NCvPH41C3WTrJFiKvbbG8jXYPe98 Processed in progress for 282ms  missing chunks for 253ms Chunks:(X✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721942 2JZpLpE1noQUGjwmckzbNZZppq633zNNPg3FwdGZBxsY Processed in progress for 311ms  missing chunks for 281ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721941 38ryKBLLxBina4cLgA3vatVJM38U63mQpjo5Rhe13ner Processed in progress for 442ms  missing chunks for 415ms Chunks:(✔✔XX))
+Aug 28 10:22:44 lesgo neard[966]: 2721940 6WqHzNTRQ696fbwAbKJ5gLa3uY51uhTLcDSyQUuFc6qM Processed in progress for 229ms  missing chunks for 204ms Chunks:(✔✔X✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721939 B4xc3cPiS7fgSMPJM33gsy3HXzcStw1TeLXEUNTuoMCr Processed in progress for 338ms  missing chunks for 308ms Chunks:(✔✔XX))
+Aug 28 10:22:44 lesgo neard[966]: 2721938 34iHhPyNao5wMeXbTmXLVd5Aj6DyyroSz6bRQ8q2kNBW Processed in progress for 342ms  missing chunks for 313ms Chunks:(✔X✔X))
+Aug 28 10:22:44 lesgo neard[966]: 2721937 CQF6JPaJVd5AiX1yhMEDqfedJFeiv1fq2EXiCBQ1g1VB Processed in progress for 303ms  missing chunks for 278ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721936 GADCVsWsMiF5FFTpcmchX5yANWE9dsSeXv3wfj65zFZd Processed in progress for 368ms  missing chunks for 340ms Chunks:(✔✔✔X))
+Aug 28 10:22:44 lesgo neard[966]: 2721935 EAjrCoPioGH95yHoKD54wW1mYMzexDnDTJTyvFD9h4HJ Processed in progress for 368ms  missing chunks for 337ms Chunks:(✔X✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721934 HWk5zQpB6GtRWD4NtRKJ2jaM7EdJNucVDpt1yridkC81 Processed in progress for 381ms  missing chunks for 221ms Chunks:(X✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721933 5fJgEfdVBp4f6uShQ8dLs4tmsB431DYtsmWZN4smLTiw Processed in progress for 358ms  missing chunks for 261ms Chunks:(✔✔XX))
+Aug 28 10:22:44 lesgo neard[966]: 2721932 69D6AT28NGUxc2ngRTJg7VdRKAx9ehoKT9kftBkwdzVw Processed in progress for 426ms  missing chunks for 306ms Chunks:(✔✔X✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721931 Y6iWeMcqQ4fiSHpmZpcoNJ4aeGGzDjHLYrSAv9anupe Processed in progress for 274ms  missing chunks for 249ms Chunks:(X✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721930 C8KWtqmd5cCYGvyrBze83rv6GFxBmu8yYFyykNZLwtCz Processed in progress for 379ms  missing chunks for 278ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721929 7XED2YJp2LAqwfGqPA2KZTQjvVoMdfZX4v5Zw5EL99Gi Processed in progress for 354ms  missing chunks for 329ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721928 Dbncwj3TMPRXcjyz6sHd1xALy3qc13LJTotktxneTfio Processed in progress for 290ms  missing chunks for 263ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721927 EZX7f23fkYmCkap3ifdnCHLwdykc1HNZ2dADf3GMW4vw Processed in progress for 497ms  missing chunks for 471ms Chunks:(✔✔✔✔))
+Aug 28 10:22:44 lesgo neard[966]: 2721926 HVvcR1tjRUMGZWDrD453SG56K5MqJTV9iWtCCwcJ1NuQ Processed in progress for 397ms  missing chunks for 372ms Chunks:(✔✔✔X))
+Aug 28 10:22:44 lesgo neard[966]: 2721925 HsdqN6zogCmMkcQWwAD6MUcJfF2jDw5q92tRYcJTYJNH Processed in progress for 303ms  missing chunks for 267ms Chunks:(✔✔✔✔))
+Aug 28 10:22:46 lesgo neard[966]: 2022-08-28T10:22:46.344804Z  WARN near_network::peer_manager::peer_manager_actor: PeerManager: stopping
+Aug 28 10:22:46 lesgo neard[966]: 2022-08-28T10:22:46.392672Z  INFO neard: Waiting for RocksDB to gracefully shutdown
+Aug 28 10:22:46 lesgo neard[966]: 2022-08-28T10:22:46.392699Z  INFO db: Waiting for remaining RocksDB instances to shut down num_instances=1
+Aug 28 10:22:48 lesgo neard[966]: 2022-08-28T10:22:48.694939Z  INFO db: All RocksDB instances shut down
+Aug 28 10:22:48 lesgo neard[966]: 2022-08-28T10:22:48.694931Z  INFO db: Dropped a RocksDB instance. num_instances=0
+Aug 28 10:22:49 lesgo systemd[1]: neard.service: Succeeded.
+Aug 28 10:22:49 lesgo systemd[1]: Stopped NEARd Daemon Service.
+Aug 28 10:23:50 lesgo systemd[1]: Started NEARd Daemon Service.
+Aug 28 10:23:50 lesgo neard[33663]: 2022-08-28T10:23:50.604889Z  INFO neard: version="trunk" build="1.1.0-2685-gfe435d02c" latest_protocol=101
+Aug 28 10:24:02 lesgo neard[33663]: 2022-08-28T10:24:02.124399Z  INFO db: Created a new RocksDB instance. num_instances=1
+Aug 28 10:24:04 lesgo neard[33663]: 2022-08-28T10:24:04.622384Z  INFO db: Dropped a RocksDB instance. num_instances=0
+Aug 28 10:24:04 lesgo neard[33663]: 2022-08-28T10:24:04.622420Z  INFO near: Opening RocksDB database path=/root/.near/data
+Aug 28 10:24:04 lesgo neard[33663]: 2022-08-28T10:24:04.622426Z  INFO db: Created a new RocksDB instance. num_instances=1
+```
