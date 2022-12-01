@@ -1,4 +1,4 @@
-#!/bin/bash
+INSTAL SUI 
 
 ```bash
 sudo apt update
