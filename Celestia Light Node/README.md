@@ -14,6 +14,7 @@ wget -qO- https://gist.githubusercontent.com/Fible1/abc4317c4f381f9168210fac7f53
 ```
 Credit **fible1#2782**
 
+## MANUAL INSTALL
 ## System Update
 ```
 sudo apt update && sudo apt upgrade -y
