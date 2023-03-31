@@ -1,6 +1,6 @@
 ## Document
 Official https://docs.celestia.org/nodes/light-node
-
+Exploler https://tiascan.com/light-nodes
 Phase 2 all task https://docs.celestia.org/nodes/blockspace-race/#phase-2-staging
 
 ## Minimum System Requirements 
@@ -21,7 +21,6 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential git ncdu -y
 sudo apt install make -y
 ```
-
 ## Installing Go
 ```
 ver="1.19.1"
@@ -33,7 +32,6 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 go version
 ```
-
 ## Install the celestia-node binary
 ```
 cd $HOME 
@@ -53,12 +51,10 @@ Build Date: Thu Dec 15 10:19:22 PM UTC 2022
 System version: amd64/linux 
 Golang version: go1.19.1
 ```
-
 ## Run & Save Mnemonic
 ```
 ./cel-key list --node.type light --p2p.network blockspacerace
 ```
-
 ## Create Service
 ```
 sudo tee <<EOF >/dev/null /etc/systemd/system/celestia-lightd.service
@@ -100,9 +96,15 @@ NOTE: /root/.celestia-light-blockspacerace-0 jangan lupa backup keys folder
 
 ## Other Command
 Cek Service 
-    ```systemctl status celestia-lightd```
+```
+systemctl status celestia-lightd
+```
 Restart Node
-    ```systemctl restart celestia-lightd```
+```
+systemctl restart celestia-lightd
+```
 Stop Node
-    ```systemctl stop celestia-lightd```
+```
+systemctl stop celestia-lightd
+```
 
