@@ -1,6 +1,8 @@
 ## Document
 Official https://docs.celestia.org/nodes/light-node
-Exploler https://tiascan.com/light-nodes
+
+Explorer https://tiascan.com/light-nodes
+
 Phase 2 all task https://docs.celestia.org/nodes/blockspace-race/#phase-2-staging
 
 ## Minimum System Requirements 
