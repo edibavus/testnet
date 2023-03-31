@@ -8,7 +8,7 @@ Phase 2 all task https://docs.celestia.org/nodes/blockspace-race/#phase-2-stagin
 - CPU: Single Core
 - Disk: 5 GB SSD
 
-## For Nubir auto instal
+## Auto Install
 ```
 wget -qO- https://gist.githubusercontent.com/Fible1/abc4317c4f381f9168210fac7f5350cf/raw/b1b44e7e1ddc4e846699f18558e44a4ee4461f0d/install-celestia.sh | bash
 ```
