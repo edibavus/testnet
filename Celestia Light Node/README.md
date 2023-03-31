@@ -53,7 +53,11 @@ Build Date: Thu Dec 15 10:19:22 PM UTC 2022
 System version: amd64/linux 
 Golang version: go1.19.1
 ```
-## Run & Save Mnemonic
+## Init Process
+```
+celestia light init --p2p.network blockspacerace
+```
+## Cek Addres
 ```
 ./cel-key list --node.type light --p2p.network blockspacerace
 ```
