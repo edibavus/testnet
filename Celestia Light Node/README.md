@@ -1,5 +1,6 @@
 ## Document
-Official https://docs.celestia.org/nodes/light-node/
+Official https://docs.celestia.org/nodes/light-node
+
 Phase 2 all task https://docs.celestia.org/nodes/blockspace-race/#phase-2-staging
 
 ## Minimum System Requirements 
