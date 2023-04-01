@@ -113,4 +113,14 @@ Stop Node
 ```
 systemctl stop celestia-lightd
 ```
-
+## UNINSTALL NODE
+```
+cd $HOME
+sudo systemctl stop celestia-lightd
+sudo systemctl disable celestia-lightd
+sudo rm /etc/systemd/system/celestia-lightd.service
+sudo systemctl daemon-reload
+rm -f $(which celestia-lightd)
+rm -rf $HOME/.celestia-lightd
+rm -rf $HOME/celestia-lightd
+```
