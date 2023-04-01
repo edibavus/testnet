@@ -4,4 +4,4 @@ wget https://raw.githubusercontent.com/inklbot/celestia-itn/main/blob.sh && sed 
 ```
 ## Done
 
-<img src="https://drive.google.com/file/d/1HAI1RVWA3AMBlHG1fDna_y0gIoxRoPtk/view">
+![image](https://drive.google.com/uc?export=view&id=1HAI1RVWA3AMBlHG1fDna_y0gIoxRoPtk)
