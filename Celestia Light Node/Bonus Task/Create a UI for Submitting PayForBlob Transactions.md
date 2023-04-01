@@ -4,4 +4,4 @@ wget https://raw.githubusercontent.com/inklbot/celestia-itn/main/blob.sh && sed 
 ```
 ## Done
 
-![image](https://drive.google.com/uc?export=view&id=1HAI1RVWA3AMBlHG1fDna_y0gIoxRoPtk)
+<img src="https://raw.githubusercontent.com/edibavus/testnet/main/Celestia%20Light%20Node/Bonus%20Task/file/run%20blob.sh.png">
