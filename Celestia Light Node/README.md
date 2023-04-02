@@ -12,9 +12,9 @@ Phase 2 all task https://docs.celestia.org/nodes/blockspace-race/#phase-2-stagin
 
 ## Auto Install
 ```
-wget -qO- https://gist.githubusercontent.com/Fible1/abc4317c4f381f9168210fac7f5350cf/raw/b1b44e7e1ddc4e846699f18558e44a4ee4461f0d/install-celestia.sh | bash
+wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && sed -i 's/\r//' node-helper.sh && chmod +x node-helper.sh && sudo /bin/bash node-helper.sh
 ```
-Credit **fible1#2782**
+Credit [inklbot](https://github.com/inklbot)
 
 ## MANUAL INSTALL
 ## System Update
