@@ -24,7 +24,7 @@ curl -L https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob >
 sed -i "s|db-path:.*|db-path: $HOME/.sui/db|g" $HOME/.sui/fullnode.yaml
 sed -i "s|genesis-file-location:.*|genesis-file-location: $HOME/.sui/genesis.blob|g" $HOME/.sui/fullnode.yaml
 ```
-
+ 
 ```bash
 sudo tee /etc/systemd/system/suid.service > /dev/null << EOF
 [Unit]
